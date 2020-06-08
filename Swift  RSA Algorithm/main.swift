@@ -169,10 +169,10 @@ extension RSA {
     }
     
     func chooseCommand() {
-        var v: Int
+
         print("Choose command:\n1. Encrypt\n2. Decrypt\n-------------------")
 
-        v = Int(readLine()!)!
+        let v = Int(readLine()!)!
         switch v {
             case 1:
                 self.encrypt()
