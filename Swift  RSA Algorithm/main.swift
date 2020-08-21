@@ -81,7 +81,7 @@ extension RSA {
         return y1
     }
     
-    func modexp(_ base: Int, _ index_n: Int, _ modulus: Int) -> Int {
+    func modExp(_ base: Int, _ index_n: Int, _ modulus: Int) -> Int {
         
         var c = 1
         for _ in 1...index_n {
@@ -95,7 +95,7 @@ extension RSA {
         print("\nInsert the message to encode:")
         
         let num = Int(readLine()!)!
-        let res = modexp(num, e, m)
+        let res = modExp(num, e, m)
         
         print("\nRESULT: \(res)")
     }
@@ -105,7 +105,7 @@ extension RSA {
         print("\nInsert the message to decode:")
         
         let num = Int(readLine()!)!
-        let res = modexp(num, d, m)
+        let res = modExp(num, d, m)
         
         print("\nRESULT: \(res)")
     }
