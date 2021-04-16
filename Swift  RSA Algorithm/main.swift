@@ -131,7 +131,7 @@ extension RSA {
         
         repeat {
                 
-            print("Enter a Prime number  p :")
+            print("Enter a Prime number  q :")
                     
             q = Int(readLine()!)!
                     
